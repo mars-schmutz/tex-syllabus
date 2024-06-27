@@ -1,0 +1,33 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{dixietech}
+
+\RequirePackage{titlesec}
+\RequirePackage{xcolor}
+\RequirePackage{helvet}
+
+\definecolor{webblue}{HTML}{124b99}
+
+\newcommand{\bline}{%
+    \vspace{-\baselineskip}
+    \noindent\textcolor{webblue}{\rule{\linewidth}{0.7pt}}
+}
+
+\titleformat{\section}
+  {\fontfamily{phv}\selectfont\Large\color{webblue}}
+  {\thesection}
+  {1em}
+  {}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\dttitle}[1]{%
+    \begin{center}
+        {
+            \LARGE
+            \color{webblue}
+            \fontfamily{phv}
+            \selectfont #1
+        }
+    \end{center}
+}
+
