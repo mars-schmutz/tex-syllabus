@@ -303,3 +303,4 @@ TSWLatexianTemp*
 build/
 *.pdf
 .DS_Store
+syllabi/

@@ -13,6 +13,7 @@ TEXFILES := backend/backend.tex \
 			web-design/web_design.tex
 
 PDFS := $(TEXFILES:.tex=.pdf)
+TARGET_DIR := syllabi
 
 all: $(PDFS)
 
@@ -20,7 +21,14 @@ all: $(PDFS)
 	@echo "Compiling $<"
 	@cd $(dir $<) && pdflatex $(notdir $<)
 
+gather: $(PDFS)
+	@echo "Moving PDFs to $(TARGET_DIR)"
+	@mkdir -p $(TARGET_DIR)
+	@rm -f $(TARGET_DIR)/*
+	@cp $^ $(TARGET_DIR)
+
 clean:
 	@rm -f */*.aux */*.log */*.out */*.toc */*.pdf
+	@rm -f $(TARGET_DIR)/*
 
 .PHONY: all clean
