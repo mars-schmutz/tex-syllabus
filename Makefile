@@ -15,7 +15,7 @@ TEXFILES := backend/backend.tex \
 PDFS := $(TEXFILES:.tex=.pdf)
 TARGET_DIR := syllabi
 
-all: $(PDFS)
+all: $(PDFS) gather
 
 %.pdf: %.tex
 	@echo "Compiling $<"
