@@ -1,18 +1,18 @@
-# TEXFILES := backend/backend.tex \
-# 			capstone/capstone.tex \
-# 			career-success/career_success.tex \
-# 			cloud/cloud.tex \
-# 			databases/databases.tex \
-# 			fundamentals/fundamentals.tex \
-# 			group-project/group_project.tex \
-# 			infrastructure/infrastructure.tex \
-# 			js-ts/js_and_ts.tex \
-# 			program/syllabus.tex \
-# 			prototyping/prototyping.tex \
-# 			react/react.tex \
-# 			web-design/web_design.tex
+TEXFILES := backend/backend.tex \
+			capstone/capstone.tex \
+			career-success/career_success.tex \
+			cloud/cloud.tex \
+			databases/databases.tex \
+			fundamentals/fundamentals.tex \
+			group-project/group_project.tex \
+			infrastructure/infrastructure.tex \
+			js-ts/js_and_ts.tex \
+			program/syllabus.tex \
+			prototyping/prototyping.tex \
+			react/react.tex \
+			tesd1100/tesd1100.tex
 
-TEXFILES := tesd1400/tesd1400.tex
+# TEXFILES := tesd1400/tesd1400.tex
 
 PDFS := $(TEXFILES:.tex=.pdf)
 TARGET_DIR := syllabi
